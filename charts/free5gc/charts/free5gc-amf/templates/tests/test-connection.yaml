@@ -22,7 +22,7 @@ metadata:
 spec:
   containers:
     - name: wget
-      image: busybox
+      image: artifactory.riftio.com/docker-hub/busybox
       command: ['wget']
       args: ['{{ .service.name }}:{{ .service.port }}']
   restartPolicy: Never

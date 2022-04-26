@@ -21,7 +21,7 @@ metadata:
 spec:
   containers:
     - name: wget
-      image: busybox
+      image: artifactory.riftio.com/docker-hub/busybox
       command: ['wget']
       args: ['{{ .Values.global.nrf.service.name }}:{{ .Values.global.nrf.service.port }}']
   restartPolicy: Never
